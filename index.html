@@ -5,332 +5,295 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <style>
       * {
-        font-family: "Open Sans", sans-serif;
+        font-family: "Source Sans Pro", sans-serif;
+        margin-top: 8px;
+        margin-bottom: 8px;
       }
       body {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin: 0;
+        padding: 0;
+        color: #222;
+        font-size: 14px;
+        line-height: 1.45;
+      }
+      .container {
+        max-width: 820px;
+        padding: 30px 40px;
+        margin: 0 auto;
       }
       .header {
         text-align: center;
         border-bottom: 1px solid #999;
-        margin: 0;
-      }
-      .header h3 {
-        color: #666;
-        line-height: 13px;
-      }
-      .content {
-        padding-left: 10px;
-      }
-      .content div {
-        margin-bottom: 20px;
-      }
-      .list li {
-        /* list-style: none; */
-      }
-      /* .inline {
-        display: flex;
-      } */
-      .inline li {
-        display: inline;
-        padding: 5px 10px;
-        /* color: #2196f3; */
-
-        line-height: 45px;
-      }
-      .inline li::after {
-        content: ",";
-      }
-      .content h2 {
-        color: #000;
-        font-weight: bolder;
-      }
-      .work {
-        /* margin-left: 5px; */
-        text-decoration: underline;
-      }
-      .links a {
-        font-size: large;
-      }
-      a {
-        text-decoration: underline;
-        color: blue;
-      }
-      p {
-        margin-left: 27px;
-      }
-      h3, .links a {
-        margin-left: 15px;
-      }
-
-      * {
-        margin-top: 10px;
+        padding-bottom: 12px;
         margin-bottom: 10px;
       }
+      .header h1 {
+        font-size: 26px;
+        font-weight: 700;
+        margin: 0 0 6px 0;
+        letter-spacing: 0.5px;
+      }
+      .header .contact {
+        font-size: 13.5px;
+        color: #444;
+        margin: 4px 0;
+      }
+      .header .contact a {
+        color: #1a5fb4;
+      }
+      .header .links {
+        font-size: 14px;
+        margin-top: 4px;
+      }
+      h2 {
+        font-size: 17px;
+        font-weight: 700;
+        color: #000;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 3px;
+        margin-top: 22px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+      }
+      h3 {
+        font-size: 14.5px;
+        font-weight: 700;
+        margin-bottom: 2px;
+      }
+      p {
+        margin: 6px 0;
+      }
+      a {
+        color: #1a5fb4;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul.list {
+        padding-left: 20px;
+        margin: 6px 0;
+      }
+      ul.list li {
+        margin-bottom: 4px;
+      }
+      .inline-skills p {
+        margin: 3px 0;
+      }
+      .inline-skills strong {
+        font-weight: 700;
+      }
+      .project {
+        margin-bottom: 14px;
+      }
+      .project .tech {
+        font-size: 13px;
+        color: #333;
+      }
+      .project .links a {
+        margin-right: 10px;
+        font-size: 13px;
+      }
+      .work-item {
+        margin-bottom: 12px;
+      }
+      .two-col {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .two-col .role {
+        font-weight: 700;
+      }
+      .two-col .dates {
+        font-style: italic;
+        color: #555;
+      }
 
-      .container {
-        max-width: 1200px;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+      @media print {
+        body {
+          font-size: 12.5px;
+        }
+        .container {
+          padding: 0 20px;
+          max-width: 100%;
+        }
+        h2 {
+          margin-top: 14px;
+        }
+        .project {
+          margin-bottom: 10px;
+        }
+        a {
+          color: #1a5fb4 !important;
+        }
+        @page {
+          margin: 12mm 10mm;
+        }
       }
     </style>
     <title>Mohamed Magdi Fawzi</title>
   </head>
   <body>
     <div class="container">
+      <!-- ===== HEADER ===== -->
       <div class="header">
-        <h2>Mohamed Magdi Fawzi</h2>
-        <h3>Location: Mit Ghamr - Dakahlia - Egypt</h3>
-        <h3>Phone: <a href="tel:+201067082672" target="_blank">+201067082672</a></h3>
-        <h3>
-          Email: <a href="mailto:magdi.sadeem@gmail.com"  target="_blank">magdi.sadeem@gmail.com</a>
-        </h3>
-        <h3>
-          LinkedIn: <a href="https://www.linkedin.com/in/oxmagdi/"  target="_blank">Mohamed Magdi</a>
-        </h3>
-        <h3>Github: <a href="https://github.com/oxmagdi" target="_blank">Github</a></h3>
+        <h1>Mohamed Magdi Fawzi</h1>
+        <div class="contact">
+          Cairo, Egypt &nbsp;|&nbsp;
+          <a href="mailto:magdi.dev@gmail.com">magdi.dev@gmail.com</a> &nbsp;|&nbsp;
+          <a href="tel:+201067082672">+20 106 708 2672</a>
+        </div>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/oxmagdi/" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
+          <a href="https://github.com/oxmagdi" target="_blank">GitHub</a>
+        </div>
       </div>
-      <div class="content">
 
-        <!-- start summary -->
-        <div class="summary">
-          <h2>Summary:</h2>
-          <p>
-            I'am a PHP & Node.js Web Developer, frameworks and technology independent, I keep my skills updated and learning Modern technologies, I am a general Web Developer with experience in backend development, front end in various languages and technologies.
-          </p>
-        </div>
-        <!-- end summary -->
+      <!-- ===== SUMMARY ===== -->
+      <div class="summary">
+        <h2>Summary</h2>
+        <p>
+          Backend Developer specialized in <strong>Node.js</strong> and JavaScript, with 5+ years
+          of experience building scalable web applications, RESTful APIs, and microservices.
+          Strong focus on clean code, performance optimization, and reliable backend solutions.
+          Comfortable working across the stack and always learning modern technologies.
+        </p>
+      </div>
 
-        <!-- start work-experience -->
-        <div class="work-experience">
-          <h2>Work Experience:</h2>
-          <div>
-            <ul class="list">
-              <li>
-                <a href="https://converted.in/" target="_blank">Converted.in</a> (formerly pinoffer)  &nbsp; 2018-Sep to 2019-Nov &nbsp; Full-Stack Web Developer
-              </li>
-              <li>
-                Freelancer &nbsp; 2020 till now &nbsp; Full-Stack Web Developer
-              </li>
-            </ul>
+      <!-- ===== WORK EXPERIENCE ===== -->
+      <div class="work-experience">
+        <h2>Work Experience</h2>
+
+        <div class="work-item">
+          <div class="two-col">
+            <span class="role">Freelance Backend Web Developer (Self-Employed)</span>
+            <span class="dates">2024 – Present</span>
           </div>
-        </div>
-        <!-- end work-experience -->
-
-        <!-- start skills -->
-        <div class="skills">
-          <h2 >Skills:</h2>
-          <h3 class="work">Skill Level: Professional</h3>
-          <ul class="list inline">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-            <li>PHP</li>
-            <li>Laravel</li>
-            <li>Wordpress</li>
-            <li>NodeJS</li>
-            <li>Express.js</li>
-            <li>Sequelize ORM</li>
-            <li>MYSQL</li>
-            <li>Redis</li>
-            <li>Git (Github, Gitlab)</li>
-            <li>Tile38</li>
-            <li>API</li>
-            <li>MVC design pattern</li>
-          </ul>
-          <h3 class="work">Skill Level: Intermediate</h3>
-          <ul class="list inline">
-            <li>Python</li>
-            <li>Rust</li>
-            <li>Java SEE</li>
-            <li>Vue.js</li>
-            <li>Docker</li>
-            <li>Nginx</li>
-            <li>Elasticsearch</li>
-            <li>Design Patterns & Data Structures</li>
-            <li>SOLID Principles</li>
+          <ul class="list">
+            <li>Delivered small to medium web projects for local clients, mainly APIs and admin panels.</li>
+            <li>Built RESTful services using Node.js and Express.js, with MySQL and Redis.</li>
+            <li>Handled full project lifecycle: requirements, development, deployment, and client handover.</li>
           </ul>
         </div>
-        <!-- end skills -->
 
-        <!-- projects -->
-        <div class="projects">
-          <h2>Open source projects:</h2>
-
-          <!-- project -->
-          <div class="project">
-            <h3 class="work">holter.js</h3>
-            <p>
-              Service registry for microservices using heartbeat mechanism
-            </p>
-            <h3>Technology I used:</h3>
-            <ul class="list inline">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Uikit</li>
-              <li>Node.js</li>
-              <li>Redis</li>
-              <li>Kue</li>
-            </ul>
-            <div class="links">
-              <a href="https://github.com/oxmagdi/holter.js" target="_blank">Github</a>
-            </div>
+        <div class="work-item">
+          <div class="two-col">
+            <span class="role">Backend Developer — Delta Soft Technologies, Mansoura</span>
+            <span class="dates">2021 – 2024</span>
           </div>
-          <!-- end project -->
-
-          <!-- project -->
-          <div class="project">
-            <h3 class="work">cms</h3>
-            <p>
-              PHP CMS Blog
-            </p>
-            <h3>Technology I used:</h3>
-            <ul class="list inline">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Bootstrap</li>
-              <li>PHP</li>
-              <li>MySQL</li>
-              <li>Docker</li>
-            </ul>
-            <div class="links">
-              <a href="https://github.com/oxmagdi/cms" target="_blank">Github</a>
-            </div>
-          </div>
-          <!-- end project -->
-
-          <!-- project -->
-          <div class="project">
-            <h3 class="work">atf-world</h3>
-            <p>
-              Universty Wordpress site.
-            </p>
-            <h3>Technology I used:</h3>
-            <ul class="list inline">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Bootstrap</li>
-              <li>PHP</li>
-              <li>MySQL</li>
-              <li>Wordpress</li>
-            </ul>
-            <div class="links">
-              <a href="https://github.com/oxmagdi/atf-world" target="_blank">Github</a>
-            </div>
-          </div>
-          <!-- end project -->
-
-          <!-- project -->
-          <div class="project">
-            <h3 class="work">js-blockchain</h3>
-            <p>
-              Blockchain API handel all transaction process.
-            </p>
-            <h3>Technology I used:</h3>
-            <ul class="list inline">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Uikit</li>
-              <li>Node.js</li>
-              <li>Redis</li>
-              <li>Kue</li>
-            </ul>
-            <div class="links">
-              <a href="https://github.com/oxmagdi/js-blockchain" target="_blank">Github</a>
-            </div>
-          </div>
-          <!-- end project -->
-
-          <!-- project -->
-          <div class="project">
-            <h3 class="work">blog-cms</h3>
-            <p>
-              Laravel CMS Blog
-            </p>
-            <h3>Technology I used:</h3>
-            <ul class="list inline">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Bootstrap</li>
-              <li>PHP</li>
-              <li>MySQL</li>
-              <li>Laravel</li>
-            </ul>
-            <div class="links">
-              <a href="https://github.com/oxmagdi/blog-cms" target="_blank">Github</a>
-            </div>
-          </div>
-          <!-- end project -->
-
-          <!-- project -->
-          <div class="project">
-            <h3 class="work">orcava</h3>
-            <p>
-              Simple PHP MVC Framework
-            </p>
-            <h3>Technology I used:</h3>
-            <ul class="list inline">
-              <li>PHP</li>
-            </ul>
-            <div class="links">
-              <a href="https://github.com/oxmagdi/orcava" target="_blank">Github</a>
-            </div>
-          </div>
-          <!-- end project -->
-
-          <!-- project -->
-          <div class="project">
-            <h3 class="work">shopify-plugin-app</h3>
-            <p>
-              Shopify plugin that tracking user activities on the store.
-            </p>
-            <h3>Technology I used:</h3>
-            <ul class="list inline">
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>Shopify API's</li>
-            </ul>
-            <div class="links">
-              <a href="https://github.com/oxmagdi/shopify-express-app" target="_blank">Github</a>
-            </div>
-          </div>
-          <!-- end project -->
-
-        </div>
-        <!-- end projects -->
-
-        <!-- start languages -->
-<!--         <div class="education">
-          <h2>Education:</h2>
-          <p> ----- </p>
-        </div> -->
-        <!-- end languages -->
-
-
-        <!-- start languages -->
-        <div class="military-service">
-          <h2>Military Service:</h2>
-          <p>Final exemption from military service.</p>
-        </div>
-        <!-- end languages -->
-
-        <!-- start languages -->
-        <div class="languages">
-          <h2>Languages:</h2>
-          <ul class="list inline">
-            <li>Arabic: Native</li>
-            <li>English: Good</li>
+          <ul class="list">
+            <li>Built and maintained backend services for an e-commerce platform using <strong>Node.js</strong>, Express.js, and Sequelize ORM.</li>
+            <li>Developed multi-role authentication systems (JWT), permission layers, and admin dashboards.</li>
+            <li>Wrote optimized SQL queries and introduced caching with Redis, which cut heavy report generation time by more than half.</li>
+            <li>Collaborated directly with frontend developers and clients to translate requirements into working APIs.</li>
+            <li>Handled bug fixing and performance tuning on legacy code, improving overall system stability.</li>
           </ul>
         </div>
-        <!-- end languages -->
+
+        <div class="work-item">
+          <div class="two-col">
+            <span class="role">Full-Stack Web Developer — <a href="https://converted.in/" target="_blank">Converted.in</a> (formerly Pinoffer)</span>
+            <span class="dates">2018 – 2020</span>
+          </div>
+          <ul class="list">
+            <li>Owned the full backend of the platform — designing, building, and maintaining all RESTful APIs and database schemas from scratch.</li>
+            <li>Built a <strong>user tracking system</strong> that detects when users approach a specific store, triggering real-time notifications and targeted ads to the store owner.</li>
+            <li>Designed and implemented <strong>dashboards for both staff and customers</strong>, covering orders, activity, and reporting.</li>
+            <li>Designed and implemented <strong>private admin panels</strong> for internal teams, covering content, users, orders, and reporting.</li>
+            <li>Developed <strong>hybrid mobile applications</strong> using the <strong>Ionic Framework</strong>.</li>
+            <li>Built scalable backend architecture using Node.js, Express, and MySQL, with clean MVC structure and reusable modules.</li>
+            <li>This role was a major turning point in my career — it gave me deep hands-on experience across the entire stack, from DB design to mobile apps.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ===== TECHNICAL SKILLS ===== -->
+      <div class="skills">
+        <h2>Technical Skills</h2>
+        <div class="inline-skills">
+          <p><strong>Backend:</strong> Node.js, Express.js, Sequelize ORM, RESTful APIs, MVC, SOLID Principles, Design Patterns</p>
+          <p><strong>Mobile:</strong> Ionic Framework (Hybrid Apps)</p>
+          <p><strong>Frontend:</strong> HTML, CSS, Bootstrap, JavaScript, Vue.js</p>
+          <p><strong>Databases:</strong> MySQL, Redis, Tile38, Elasticsearch</p>
+          <p><strong>DevOps &amp; Tools:</strong> Git (GitHub, GitLab), Docker, Nginx, Linux</p>
+          <p><strong>Also Familiar With:</strong> PHP, Laravel, WordPress, Python, Rust, Java SE</p>
+        </div>
+      </div>
+
+      <!-- ===== PROJECTS ===== -->
+      <div class="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+          <h3>Holter.js — Service Registry for Microservices</h3>
+          <p>Service registry for microservices using a heartbeat mechanism to monitor and track live services.</p>
+          <p class="tech"><strong>Tech:</strong> Node.js, Redis, Kue, HTML, CSS, UIkit</p>
+          <p class="links"><a href="https://github.com/oxmagdi/holter.js" target="_blank">GitHub</a></p>
+        </div>
+
+        <div class="project">
+          <h3>JS-Blockchain — Blockchain API</h3>
+          <p>A blockchain API that handles the full transaction process with a reliable queue system.</p>
+          <p class="tech"><strong>Tech:</strong> Node.js, Redis, Kue, HTML, CSS, UIkit</p>
+          <p class="links"><a href="https://github.com/oxmagdi/js-blockchain" target="_blank">GitHub</a></p>
+        </div>
+
+        <div class="project">
+          <h3>Shopify Plugin App</h3>
+          <p>A Shopify plugin that tracks user activity on the store for analytics and insights.</p>
+          <p class="tech"><strong>Tech:</strong> Node.js, Express.js, Shopify APIs</p>
+          <p class="links"><a href="https://github.com/oxmagdi/shopify-express-app" target="_blank">GitHub</a></p>
+        </div>
+
+        <div class="project">
+          <h3>CMS — PHP CMS Blog</h3>
+          <p>A content management system for blogs built from scratch in PHP with a clean MVC structure.</p>
+          <p class="tech"><strong>Tech:</strong> PHP, MySQL, Bootstrap, Docker</p>
+          <p class="links"><a href="https://github.com/oxmagdi/cms" target="_blank">GitHub</a></p>
+        </div>
+
+        <div class="project">
+          <h3>ATF-World — University WordPress Site</h3>
+          <p>A university website built on WordPress with custom theming and content structure.</p>
+          <p class="tech"><strong>Tech:</strong> WordPress, PHP, MySQL, Bootstrap</p>
+          <p class="links"><a href="https://github.com/oxmagdi/atf-world" target="_blank">GitHub</a></p>
+        </div>
+
+        <div class="project">
+          <h3>Blog-CMS — Laravel CMS Blog</h3>
+          <p>A blog CMS built with Laravel featuring authentication, posts, and an admin dashboard.</p>
+          <p class="tech"><strong>Tech:</strong> Laravel, PHP, MySQL, Bootstrap</p>
+          <p class="links"><a href="https://github.com/oxmagdi/blog-cms" target="_blank">GitHub</a></p>
+        </div>
+
+        <div class="project">
+          <h3>Orcava — Simple PHP MVC Framework</h3>
+          <p>A lightweight PHP MVC framework built to understand and demonstrate core framework concepts.</p>
+          <p class="tech"><strong>Tech:</strong> PHP</p>
+          <p class="links"><a href="https://github.com/oxmagdi/orcava" target="_blank">GitHub</a></p>
+        </div>
+      </div>
+
+      <!-- ===== MILITARY SERVICE ===== -->
+      <div class="military-service">
+        <h2>Military Service</h2>
+        <p>Final exemption from military service.</p>
+      </div>
+
+      <!-- ===== LANGUAGES ===== -->
+      <div class="languages">
+        <h2>Languages</h2>
+        <ul class="list">
+          <li>Arabic: Native</li>
+          <li>English: Good</li>
+        </ul>
       </div>
     </div>
   </body>
